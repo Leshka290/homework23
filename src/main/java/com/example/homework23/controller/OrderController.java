@@ -2,7 +2,6 @@ package com.example.homework23.controller;
 
 import com.example.homework23.model.Order;
 import com.example.homework23.service.OrderService;
-import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,7 +11,6 @@ import java.util.Collection;
 
 @RequestMapping("/order")
 @RestController
-@Scope("session")
 public class OrderController {
 
     private final OrderService orderService;
